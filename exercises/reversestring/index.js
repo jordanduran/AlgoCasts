@@ -20,17 +20,18 @@
 // function reverse(str) {
 //   let reversed = '';
 
-//   for (let characters of str) {
-//     reversed = characters + reversed;
+//   for (let character of str) {
+//     reversed = character + reversed;
 //   }
 //   return reversed;
 // }
 
-// Solution #3
+// Solution #3 (Most advanced solution)
 
 function reverse(str) {
-  return str.split('').reduce((reversed, character) => {
-    return character + reversed;
-  }, '');
+  return str
+    .split('')
+    .reduce((reversed, character) => character + reversed, '');
 }
+
 module.exports = reverse;
