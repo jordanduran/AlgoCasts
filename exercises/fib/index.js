@@ -8,7 +8,7 @@
 // Example:
 //   fib(4) === 3
 
-// Solution #1 -- 0(n) - Linear run time
+// Solution #1 (Iterative) -- 0(n) - Linear run time
 
 function fib(n) {
   const result = [0, 1];
@@ -21,5 +21,7 @@ function fib(n) {
   }
   return result[n];
 }
+
+// Solution #2 (Recursive) -- 0(n) - Linear run time
 
 module.exports = fib;
