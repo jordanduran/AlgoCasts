@@ -16,12 +16,12 @@ function maxChar(str) {
     } else {
       characterMap[character] = 1;
     }
-  }
 
-  for (let character in characterMap) {
-    if (characterMap[character] > max) {
-      max = characterMap[character];
-      maxCharacter = character;
+    for (let character in characterMap) {
+      if (characterMap[character] > max) {
+        max = characterMap[character];
+        maxCharacter = character;
+      }
     }
   }
 
